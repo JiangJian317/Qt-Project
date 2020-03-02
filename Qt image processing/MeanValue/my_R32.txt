@@ -1,0 +1,2 @@
+Lv-mean	X-mean	Y-mean
+233.8	0.2	0.5

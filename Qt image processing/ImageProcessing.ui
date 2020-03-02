@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ImageProcessing</class>
+ <widget class="QDialog" name="ImageProcessing">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>368</width>
+    <height>514</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>800</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>ImageProcessing</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>120</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(210, 210, 210);</string>
+       </property>
+       <property name="text">
+        <string>ImageSaveType:</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="saveImageType">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <item>
+        <property name="text">
+         <string>LS_SDK_FileType_LSIMG</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LS_SDK_FileType_CSV</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LS_SDK_FileType_FITS</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <widget class="QLabel" name="label_2">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgb(210, 210, 210);</string>
+       </property>
+       <property name="text">
+        <string>SpotMeterColorSpace:</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="ColorSpace">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <item>
+        <property name="text">
+         <string>LS_SDK_ColorSpace_Lvxy</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>LS_SDK_ColorSpace_XYZ</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="ImageAcquisition">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color: rgb(255, 255, 255);border-top-color: rgb(180, 180, 180);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color:  transparent;}
+QPushButton{background-color: rgb(87,94,136);color:white;}
+QPushButton:hover{background-color: rgb(117,149,209);color:white;}
+QPushButton:pressed{background-color: rgb(71, 175, 255);color:white;}</string>
+       </property>
+       <property name="text">
+        <string>图像采集</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QPushButton" name="ImageLoad">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color: rgb(255, 255, 255);border-top-color: rgb(180, 180, 180);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color:  transparent;}
+QPushButton{background-color: rgb(87,94,136);color:white;}
+QPushButton:hover{background-color: rgb(117,149,209);color:white;}
+QPushButton:pressed{background-color: rgb(71, 175, 255);color:white;}</string>
+       </property>
+       <property name="text">
+        <string>加载图像</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="Preprocessing">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color: rgb(255, 255, 255);border-top-color: rgb(180, 180, 180);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color:  transparent;}
+QPushButton{background-color: rgb(87,94,136);color:white;}
+QPushButton:hover{background-color: rgb(117,149,209);color:white;}
+QPushButton:pressed{background-color: rgb(71, 175, 255);color:white;}</string>
+       </property>
+       <property name="text">
+        <string>预处理</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="Analysis">
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{color: rgb(255, 255, 255);border-top-color: rgb(180, 180, 180);
+border-right-color: transparent;
+border-left-color: transparent;
+border-bottom-color:  transparent;}
+QPushButton{background-color: rgb(87,94,136);color:white;}
+QPushButton:hover{background-color: rgb(117,149,209);color:white;}
+QPushButton:pressed{background-color: rgb(71, 175, 255);color:white;}</string>
+       </property>
+       <property name="text">
+        <string>分析</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QTextEdit" name="informationBar">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>360</height>
+      </size>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
